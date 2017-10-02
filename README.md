@@ -2,6 +2,47 @@
 
 This sample RESTful API project. It is built using JavaScript/Node.js, ExpressJS (a small, lightweight web MVC framework) & Mongoose (a MongoDB object modelling library).
 
+## Pre-requisites
+
+To get started, you'll need to have the following requirements installed
+
+- Git
+- Node.js<sup>1</sup>
+- npm
+- MongoDB 2.6.x / 3.4.x<sup>2</sup>
+
+<sup>1</sup>See https://nodejs.org/
+<sup>2</sup>See https://docs.mongodb.com/manual/administration/install-community/ for installation guides
+
+## Getting started
+
+	# Ensure `mongod` is running, either as a service or in another shell
+
+	```
+	$git clone <this repo>
+	$npm install
+	$npm install grunt-cli -g
+	$grunt test   # If finish successfully all is ok
+	$grunt seeds  # Seed the DB with Users
+	$grunt server # start the project
+	```
+## Running tests
+
+`grunt test`
+
+## Debugging
+
+`grunt debug`
+
+## Commands
+
+| Command       | Description                                         |
+| ------------- |:---------------------------------------------------:|
+| grunt test    | Check style and run all tests                       |
+| grunt server  | Start server locally on the port 8000               |
+| grunt debug   | Start server locally in debug mode (node-inspector) |
+| grunt seeds   | Fill the Database                                   |
+
 ## Response Definition
 
 All responses return the Reponse Object defined into `/server/helper/reponse.js` as described into the following attributes definition table.
@@ -98,37 +139,6 @@ Ref.: https://en.wikipedia.org/wiki/Representational_state_transfer
     models        # database model definitions
     tests         # test suit
 
-## Pre-requisites
-
-To get started, you'll need to have the following requirements installed
-
-- Git
-- Node.js<sup>1</sup>
-- npm
-- MongoDB 2.6.x / 3.4.x<sup>2</sup>
-
-<sup>1</sup>See https://nodejs.org/
-<sup>2</sup>See https://docs.mongodb.com/manual/administration/install-community/ for installation guides
-
-## Getting started
-	
-	# Ensure `mongod` is running, either as a service or in another shell
-
-	```
-	$git clone <this repo>
-	$npm install
-	$npm install grunt-cli -g
-	$grunt test   # If finish successfully all is ok
-	$grunt seeds  # Seed the DB with Users
-	$grunt server # start the project
-	```
-## Running tests
-
-`grunt test`
-
-## Debugging
-
-`grunt debug`
 
 ## API documentation
 
@@ -137,13 +147,4 @@ See [API.md](API.md) for details.
 ## SonarQube
 In addition to ESLint, we've also included some configuration for SonarQube in `sonar-project.properties`.
 See http://docs.sonarqube.org/display/SONAR/Get+Started+in+Two+Minutes for more details on how to setup SonarQube locally.
-
-## Commands
-
-| Command       | Description                                         |
-| ------------- |:---------------------------------------------------:|
-| grunt test    | Check style and run all tests                       |
-| grunt server  | Start server locally on the port 8000               |
-| grunt debug   | Start server locally in debug mode (node-inspector) |
-| grunt seeds   | Fill the Database                                   |
 

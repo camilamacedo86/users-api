@@ -1,0 +1,11 @@
+{
+  "mongoUrl": "mongodb://localhost:27017/users",
+  "Server": {
+    "host": "localhost",
+    "port": 8000,
+    "url": "http://localhost:8000"
+  },
+  "TestSuit": {
+    "chaiUrl": "http://127.0.0.1:8001"
+  }
+}

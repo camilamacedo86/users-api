@@ -1,0 +1,5 @@
+.sonar
+node_modules
+*.log
+*.txt
+*.idea
